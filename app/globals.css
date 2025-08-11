@@ -1,0 +1,63 @@
+:root {
+  --blue-700: #0b5fff;
+  --blue-500: #3c82ff;
+  --blue-300: #93b4ff;
+  --red-700: #e1003c;
+  --red-500: #ff3b53;
+  --red-300: #ff9aa6;
+  --bg: #0b0d12;
+  --panel: #111521;
+  --panel-contrast: #141a2a;
+  --text: #e9eefc;
+  --muted: #a7b0c6;
+  --success: #20c997;
+  --amber: #ffb020;
+  --bevel-inner: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1.5px 0 rgba(0, 0, 0, 0.6);
+  --bevel-outline: 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --radius: 14px;
+  --press-scale: 0.98;
+  --press-duration: 180ms;
+  --press-ease: cubic-bezier(.2,.9,.2,1);
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+html { color-scheme: dark; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "Helvetica Neue", Arial;
+  background: radial-gradient(1200px 800px at 20% -10%, #0e1630 0%, #0b0d12 52%, #090b0f 100%);
+  color: var(--text);
+}
+.main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 56px; }
+.concave {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.22));
+  border-radius: var(--radius);
+  box-shadow: var(--bevel-inner), var(--bevel-outline);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px;
+  border-radius: 999px; box-shadow: var(--bevel-inner);
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(0,0,0,0.3));
+  border: 1px solid rgba(255,255,255,.06);
+}
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.grid { display: grid; gap: 16px; }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 1024px) { .grid-3 { grid-template-columns: 1fr; } }
+a { color: var(--blue-300); text-decoration: none; }
+a:hover { text-decoration: underline; }
+input, select, textarea, button { font: inherit; color: inherit; }
+label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.field { display: grid; gap: 6px; }
+input[type="text"], input[type="date"], textarea, select {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--blue-500); }
+button { cursor: pointer; }
+hr { border: none; height: 1px; background: rgba(255,255,255,.06); margin: 12px 0; }
+.badge { font-size: 12px; opacity: 0.9; }

@@ -1,0 +1,42 @@
+{
+  "name": "pwa-wo-wnsc-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"(optional) add vitest/jest or playwright\" && exit 0",
+    "analyze": "ANALYZE=true next build"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "date-fns": "^3.6.0",
+    "date-fns-tz": "^3.2.0",
+    "dexie": "^4.0.8",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "next": "14.2.5",
+    "next-pwa": "^5.6.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.12.7",
+    "uuid": "^9.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/html2canvas": "^1.0.1",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

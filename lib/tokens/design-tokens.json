@@ -1,0 +1,20 @@
+{
+  "themes": {
+    "omanOil": {
+      "gradientStart": "#0b5fff",
+      "gradientEnd": "#3c82ff"
+    },
+    "nama": {
+      "gradientStart": "#e1003c",
+      "gradientEnd": "#ff3b53"
+    }
+  },
+  "press": {
+    "durationMs": 180,
+    "scale": 0.98,
+    "tiltDeg": 3
+  },
+  "shadows": {
+    "inner": "inset 0 1px 0 rgba(255,255,255,.08), inset 0 -1.5px 0 rgba(0,0,0,.6)"
+  }
+}
