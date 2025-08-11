@@ -54,7 +54,8 @@ export default function Dashboard() {
         if (t < start || t > end) return false;
       }
       if (!s) return true;
-      const hay = `${r.refNumber} ${r.description || ''} ${r.notes || ''} ${(r.tags || []).join(' ')}`.toLowerCase();
+      const hay = `${r.refNumber} ${'description' in r ? (r.description || '') : ''} ${r.notes || ''} ${(r.tags || []).join(' ')}`.toLowerCase();
+      
       return hay.includes(s);
     });
   }, [company, status, search, range, records]);
